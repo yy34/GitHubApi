@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Github API</title>
+
+
+</head>
+
+<body>
+
+    <div class="container p-5 w-50">
+        <h1 class="text-center"> GitHub API</h1>
+        <div class="search card card-body ">
+            <form id="github-form">
+                <input type="text" name="githubname" id="githubname" class="form-control"
+                    placeholder="Github Kullanıcı adı">
+                <br>
+                <button type="submit" class=" btn btn-light btn-lg btn-block btn-outline-dark">Ara</button>
+            </form>
+
+
+        </div>
+        <br>
+
+        <div id="profile">
+
+        </div>
+        <h3 class="page-heading mb-3 text-center">En son repolar</h3>
+        <div id="repos">
+            <table class="table table-striped table-bordered center">
+                <thead class=thead-dark">
+
+                    <tr>
+                        <th>Repo Adı</th>
+                        <th>URL</th>
+                        <th>Star</th>
+                        <th>Fork</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="tRepos">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+
+
+        <script src="github.js"></script>
+        <script src="ui.js"></script>
+        <script src="app.js"></script>
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
+            integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
